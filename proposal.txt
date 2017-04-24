@@ -1,8 +1,8 @@
 ﻿去旅游吧APP：gotravelApp
 
 广告词 ：去旅游，就找去旅游吧！！！
-技术栈：前端 =>  vue + vueX + webpack + php + Mysql + boostop + font字体库 + es6;
-        后台 =>  react + webpack + Mysql + nodejs + es6 + boostop + font字体库;
+技术栈：前端 =>  vue + vueX + webpack + php + Mysql + boostop + Font Awesome + es6;
+        后台 =>  react + webpack + Mysql + nodejs + es6 + boostop + Font Awesome;
 
 数据库名称：gotravel
 
