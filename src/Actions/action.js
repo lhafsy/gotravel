@@ -1,6 +1,7 @@
 import axios from 'axios'
 import store from '../store/index.js'
 import $ from 'jquery'
+import {BASE_URL} from '../../common/baseUrl.js'
 
 export default {
     submit ({commit},obj) {
@@ -27,43 +28,79 @@ export default {
         //     store.commit('login');
         // }
         // console.log(obj.username)
-        store.commit('login',obj);
+        // store.commit('login',obj);
     },
-    login({commit},obj){ 
+    lgy_login({commit},obj){
         $.ajax({
-            url: 'http://localhost/VUE/demo0415/lc666/src/php/login.php',
-            type: 'POST',
-            data: {username: obj.username,password:obj.password},
+            url: {BASE_URL}.BASE_URL+'gotravel/gotravel/php/lgy_getdata.php',
+            type: 'get',
+            data: [],
             success:function(response){
                 this.data= response
                 
                 console.log(response);
-                if(response == 'login succeed'){
-                    location.href='http://localhost:8080/'+'?id='+obj.username
-                }
+                // if(response == 'login succeed'){
+                //     location.href='http://localhost:8080/'+'?id='+obj.username
+                // }
                 
 
 
             }
         })
-
-        
     },
-    register({commit},obj){
-         $.ajax({
-            url: 'http://localhost/VUE/demo0415/lc666/src/php/register.php',
-            type: 'POST',
-            data: {username: obj.username,password:obj.password},
+    lgy_register({commit},obj){
+        $.ajax({
+            url: {BASE_URL}.BASE_URL+'gotravel/gotravel/php/lgy_adddata.php',
+            type: 'post',
+            data: {name: obj.name,password:obj.password},
             success:function(response){
-                console.log(obj.username);
+                // this.data= response
+                
                 console.log(response);
-                if(response == 'register success'){
-                    console.log(666)
-                    // location.href='http://localhost:8080/login';
-                }
+                // if(response == 'login succeed'){
+                //     location.href='http://localhost:8080/'+'?id='+obj.username
+                // }
+                
+
+
             }
         })
-    },  
+    },
+    // login({commit},obj){ 
+    //     $.ajax({
+    //         url: 'http://localhost/VUE/demo0415/lc666/src/php/login.php',
+    //         type: 'POST',
+    //         data: {username: obj.username,password:obj.password},
+    //         success:function(response){
+    //             this.data= response
+                
+    //             console.log(response);
+    //             if(response == 'login succeed'){
+    //                 location.href='http://localhost:8080/'+'?id='+obj.username
+    //             }
+                
+
+
+    //         }
+    //     })
+
+        
+    // },
+    // register({commit},obj){
+    //      $.ajax({
+    //         url: 'http://localhost/VUE/demo0415/lc666/src/php/register.php',
+    //         type: 'POST',
+    //         data: {username: obj.username,password:obj.password},
+    //         success:function(response){
+    //             console.log(obj.username);
+    //             console.log(response);
+    //             if(response == 'register success'){
+    //                 console.log(666)
+    //                 // location.href='http://localhost:8080/login';
+    //             }
+    //         }
+    //     })
+    // },  
     // register ({commit},obj){
     //     store.commit('register',obj);
 

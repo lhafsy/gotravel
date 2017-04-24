@@ -1,0 +1,168 @@
+*{margin: 0;padding: 0;list-style: none}
+.box{
+  zoom:1;
+}
+.box:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+#detailsTop{
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+#detailsTop ul{
+  width: 100%;
+  height: 2.1875rem
+}
+#detailsTop  ul li{
+  width: 33%;
+  height: 1.875rem;
+  line-height:1.875rem;
+  text-align: center;
+  float: left;
+  margin: 0.625rem 0;
+}
+
+#detailsLi{
+  border-left: 1px solid #eee;
+  border-right:  1px solid #eee;
+}
+
+
+
+#detailsImg{
+  width: 100%;
+  height: 9.375rem;
+  background-color: red;
+  position: relative;
+}
+#detailsImg p{
+  position: absolute;
+  bottom: 0.85rem;
+  left: 1.625rem;
+  font-size: 12px;
+  color: #fff;
+}
+
+
+
+#detailsEvaluate{
+  width: 95%;
+  height:2.5625rem;
+  border-bottom: 1px solid #edeadd;
+  margin-left: 5%;
+  padding-top: 0.8125rem;
+  padding-bottom: 0.75rem;
+}
+#detailsEvaluate > p{
+  display: inline-block;
+  width: 80%;
+}
+
+#detailsEvaluate >div{
+  display: inline-block;
+  width: 15%;
+}
+
+#detailsEvaluate > div >img{
+  display: inline-block;
+  margin-left: 0.3125rem;
+  width:1.3125rem;
+  height:1.3125rem;
+}
+
+
+.detailsTicket{
+  box-sizing: border-box;
+  width: 95%;
+  height:4.375rem;
+  margin-left: 5%;
+  padding: 15px 15px 15px 0;
+  background-color: #eee;
+}
+.detailsTicketP1{
+  color: #574324;
+  font-size: 16px;
+  text-indent: 1.25rem;
+}
+.detailsTicketP2{
+  padding: 0.3125rem 0;
+  display: inline-block;
+  color: #ff6600;
+  font-size: 20px;
+  text-indent: 1.25rem;
+}
+.detailsTicketP3{
+  float: right;
+  width: 2.9375rem;
+  border: 1px solid #ff9000;
+  border-radius: 0.25rem;
+  display: inline-block;
+  text-align: center;
+  height: 1.75rem;
+  line-height: 2;
+  color: #fff;
+  background: #ff9000;
+  font-size: 0.875rem;
+  margin-top: -0.75rem;
+}
+
+.detailsSupportingFacilities{
+  width: 95%;
+  margin-left: 5%;
+  height: 6rem;
+}
+.detailsSupportingFacilitiesTop{
+  width:100%;
+  font-size: 15px;
+  color: #574324;
+  padding: 0.625rem 0;
+}
+.detailsSupportingFacilitiesTop img{
+  width:1.1875rem;
+  height: 1.1875rem;
+}
+
+.detailsSupportingFacilitiesBottom{
+  width: 16.666666%;
+  float: left;
+  text-align: center;
+  font-size: 11px;
+  color: #8b7a69;
+}
+.detailsSupportingFacilitiesBottom img{
+ display: block;
+ width: 20px;
+ height: 20px;
+ margin: 0 auto;
+ margin-bottom: 2.5px;
+}
+#detailsBigBox{
+  width: 100%;
+}
+.detailsDiv{
+  font-size: 15px;
+  color: #574324;
+  padding: 13px 0 15px 12.5px;
+}
+.detailsDiv p{
+  width: 95detailsEvaluate%
+}
+.detailsDiv img{
+  width: 1.1875rem;
+  height: 1.1875rem
+}
+
+
+
+
+
+
+
+
+
+

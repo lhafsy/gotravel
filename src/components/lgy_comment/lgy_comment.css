@@ -1,0 +1,151 @@
+.lgy_comment{
+	width: 100%;
+}
+.lgy_commenttop{
+	padding: 1rem;
+	height: 7rem;
+}
+.lgy_commentleft{
+	width: 30%;
+	height: 7rem;
+	text-align: center;
+	float: left;
+}
+.lgy_commentleft p{
+	color: #ff9000;
+    font-size: 40px;
+    font-weight: bold;
+}
+.lgy_commentstar{
+	width: 80px;
+    height: 16px;
+    text-align: left;
+    margin: 0 auto 10px;
+    background: url(../../../img/star2.png) left top repeat-x;
+    background-size: 16px 16px;
+}
+.lgy_commentstar em{
+    width: 0%;
+    height: 16px;
+    display: inline-block;
+    background: url(../../../img/star1.png) left bottom repeat-x;
+    background-size: 16px 16px;
+}
+.lgy_commentright{
+	width: 70%;
+	float: right;
+}
+.lgy_commentright ul{
+	padding: 10px 5px 5px 5px;
+}
+.lgy_commentright ul li{
+	font-size: 12px;
+	float: left;
+    text-align: center;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    color: #876c52;
+    border: 1px solid #876c52;
+    border-radius: 20px;
+}
+.lgy_commentmsg{
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid #ccc;
+}
+.lgy_commentmsg ul li{
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid #ccc;
+}
+.lgy_msgtop{
+	height: 3rem;
+	padding: 1rem;
+}
+.userinfoa{
+	float: left;
+	position: relative;
+}
+.userinfoa img{
+	width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.userinfoa span{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 12px;
+    padding: 0px 2px;
+    background: #ff9000;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 8px;
+}
+.userinfob{
+	float: left;
+	margin-left: 0.5rem;
+}
+.userinfob span{
+	width: 2.2rem;
+	height: 3rem;
+	float: left;
+	line-height: 3rem;
+	display: inline-block;
+}
+.lgy_commentleft{
+	float: left;
+}
+.lgy_commentstar1{
+	width: 80px;
+    height: 16px;
+    float: left;
+    text-align: left;
+    margin: 1rem auto 10px;
+    background: url(../../../img/star2.png) left top repeat-x;
+    background-size: 16px 16px;
+}
+.lgy_commentstar1 em{
+    width: 0%;
+    height: 16px;
+    display: inline-block;
+    background: url(../../../img/star1.png) left bottom repeat-x;
+    background-size: 16px 16px;
+}
+.lgy_score{
+	display: inline-block;
+    padding-left: 5px;
+    color: #ff9000;
+}
+.userinfoc{
+	width: 3rem;
+	height: 3rem;
+	float: right;
+}
+.userinfocbg{
+	width: 3rem;
+	height: 3rem;
+	background: url(../../../img/youzhi.png) no-repeat;
+	background-size:85%;
+}
+.lgy_msgcenter{
+	padding: 0 0.8rem;
+}
+.lgy_msgcenter p{
+	width: 100%;
+	height: 6rem;
+	font-size: 0.8rem;
+	color: #8b7a69;
+	overflow: hidden;
+}
+.lgy_msgbottom{
+	padding: 0 0.8rem;
+}
+.lgy_msgbottom p{
+	width: 100%;
+	height: 1rem;
+	font-size: 0.8rem;
+	color: #bda895;
+	overflow: hidden;
+}

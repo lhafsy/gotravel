@@ -1,0 +1,69 @@
+.lgy_loginbox{
+	width: 100%;
+}
+.lgy_loginbox .lgy_login:nth-child(5){
+	padding-left: 4.9rem;
+	height: 2rem;
+	line-height: 2rem;
+	position: relative;
+}
+.lgy_loginbox .lgy_login:nth-child(3) input{
+	margin-left: 0.5rem;
+}
+.lgy_login{
+	height: 3rem;
+	line-height: 3rem;
+	padding: 0 1.5rem;
+}
+.lgy_login input{
+	text-indent: 0.5rem;
+	margin-left: 1.5rem;
+	width: 60%;
+	height: 2rem;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+}
+.lgy_login span{
+	font-size: 1rem;
+}
+.lgy_changenum{
+	width: 26%;
+	height: 2.3rem;
+	line-height: 2.3rem;
+	margin-left: 0.2rem;
+	background: #ff7e00;
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+	display: inline-block;
+}
+.lgy_login .lgy_inputnum{
+	width: 35%;
+}
+.lgy_login .lgy_checkbox{
+	width: 1rem;
+	height: 1rem;
+	line-height: 1rem;
+	position: absolute;
+	top: 0.55rem;
+	left: 1.3rem;
+	display: inline-block;
+	margin-left: 11%;
+}
+.lgy_login .lgy_checkmsg{
+	display: inline-block;
+	font-size: 0.5rem;
+	color: #8e8a8a;
+}
+.lgy_loginbtn{
+	width: 64%;
+	height: 3rem;
+	display: inline-block;
+	border-radius: 5px;
+	margin: 1rem 3.5rem;
+	background: #ff7e00;
+	font-size: 1.2rem;
+	color: #fff;
+	border: 0;
+}

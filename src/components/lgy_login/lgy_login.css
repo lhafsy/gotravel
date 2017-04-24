@@ -1,0 +1,65 @@
+.lgyl_loginbox{
+	width: 100%;
+}
+.lgyl_loginbox .lgyl_login:nth-child(4){
+	padding-left: 4.9rem;
+	height: 2rem;
+	line-height: 2rem;
+	position: relative;
+}
+.lgyl_login{
+	height: 3rem;
+	line-height: 3rem;
+	padding: 0 1.5rem;
+}
+.lgyl_login input{
+	text-indent: 0.5rem;
+	margin-left: 0.5rem;
+	width: 60%;
+	height: 2rem;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+}
+.lgyl_login span{
+	font-size: 1rem;
+}
+.lgyl_changenum{
+	width: 20%;
+	height: 2.3rem;
+	line-height: 2.3rem;
+	margin-left: 1.5rem;
+	background: #a99aa7;
+	border-radius: 5px;
+	text-align: center;
+	display: inline-block;
+}
+.lgyl_login .lgyl_inputnum{
+	width: 35%;
+}
+.lgyl_login .lgyl_checkbox{
+	width: 1rem;
+	height: 1rem;
+	line-height: 1rem;
+	position: absolute;
+	top: 0.55rem;
+	left: 1.3rem;
+	display: inline-block;
+	margin-left: 11%;
+}
+.lgyl_login .lgyl_checkmsg{
+	display: inline-block;
+	font-size: 0.5rem;
+	color: #8e8a8a;
+}
+.lgyl_loginbtn{
+	width: 64%;
+	height: 3rem;
+	display: inline-block;
+	border-radius: 5px;
+	margin: 1rem 3.5rem;
+	background: #a99aa7;
+	font-size: 1.2rem;
+	color: #fff;
+	border: 0;
+}

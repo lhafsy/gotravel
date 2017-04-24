@@ -1,18 +1,18 @@
 <template>
   <div class="app">
-    <img src="./assets/logo.png">
+    <!-- <img src="./assets/logo.png">
     <h1></h1>
     <h2>{{ msg }}</h2>
     <div v-if="user == ''">
       <div class="link">
         <router-link to="/login">登录</router-link>
         <router-link to="/register">注册</router-link>
-      </div>
+      </div> -->
       <router-view></router-view>
-    </div>
+    <!-- </div>
     <div v-else>
       <div>欢迎您,<span>{{ user }}</span></div>
-    </div>
+    </div> -->
 
   </div>
 
@@ -39,52 +39,55 @@
 </script>
 
 <style>
-.app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body{
+  font-family: '微软雅黑';
 }
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
+*{
+  margin: 0;
   padding: 0;
 }
-
-li {
-  display: inline-block;
-  margin: 0 10px;
+a{
+  text-decoration: none;
+  color: #333;
 }
-
-a {
-  color: #42b983;
+input{
+  outline: none;
 }
-  .link{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 100px;
-    height: 30px;
-    line-height: 31px;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 6px;
-  }
-  .link a{
-    width: 50px;
-  }
-.link .router-link-active{
-  background-color: #ca2a2a;
-  width: 50px;
+em{
+  font-style: normal;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+.clear:after {
+  display: block;
+  height: 0;
+  clear: both;
+}
+.clear{
+  zoom: 1;
+}
+/*.link{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100px;
   height: 30px;
-  display: inline-block;
+  line-height: 31px;
+  text-decoration: none;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 6px;
 }
+.link a{
+  width: 50px;
+}
+.link .router-link-active{
+background-color: #ca2a2a;
+width: 50px;
+height: 30px;
+display: inline-block;
+color: #fff;
+border-radius: 4px;
+}*/
 </style>
