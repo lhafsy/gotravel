@@ -1,0 +1,189 @@
+@charset "utf-8";
+html {-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, big, cite, code, del, em, font, img, ins, small, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input { margin: 0; padding: 0; }
+ol, ul { list-style: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+audio, canvas, progress, video { display: inline-block; vertical-align: baseline; }
+audio:not([controls]) { display: none; height: 0; }
+
+/*a { background: transparent; }
+a:active, a:hover { outline: 0; }*/
+abbr[title] { border-bottom: 1px dotted; }
+em{font-style: normal;}
+b, strong { font-weight: bold; }
+dfn { font-style: italic; }
+mark { background: #ff0; color: #000; }
+small { font-size: 80%; }
+sub, sup { position: relative; vertical-align: baseline; font-size: 75%; line-height: 0; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+:focus { outline: 0; }
+img { border: 0; vertical-align: middle; }
+a img { border: 0; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 1em 40px; }
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+pre { overflow: auto; }
+code, kbd, pre, samp { font-size: 1em; font-family: monospace, monospace; }
+button, input, optgroup, select, textarea { margin: 0; color: inherit; font: inherit; }
+button { overflow: visible; }
+button, select { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+button[disabled], html input[disabled] { cursor: default; }
+button::-moz-focus-inner, input::-moz-focus-inner { padding:0; border:0;}
+input { line-height: normal; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height:auto;}
+input[type="search"] { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; -webkit-appearance: textfield; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance:none;}
+fieldset { margin: 0 2px; padding: .35em .625em .75em; border: 1px solid #c0c0c0; }
+legend { padding: 0; border: 0; }
+textarea { overflow: auto; }
+optgroup { font-weight: bold; }
+table { border-spacing: 0; border-collapse: collapse; empty-cells: show; }
+td, th { padding: 0; }
+.fn-clear:after { visibility:hidden; display:block; font-size:0; content:""; clear:both; height:0 }
+.fn-clear { clear:both; zoom:1 }
+.clearfix{ clear:both}
+.fn-clearfix { display:block; height:0; font-size:0; line-height:0; overflow:hidden; visibility:hidden; clear:both }
+body .fn-hide { display:none }
+.fn-left, .fn-right { display:inline}
+.fn-left { float:left}
+.fn-right { float:right}
+*html .clearfix { height: 1%; }
+.clearfix { display: block; }
+*+html .clearfix { min-height: 1%; }
+div { display: block; }
+.fn-hide { display: none; }
+body { background: #fff;min-width: 300px;max-width: 640px;margin:0 auto; color: #848484; font:14px/1.5 'Helvetica Neue','Helvetica','sans-serif','Microsoft Yahei','helvetica','arial';overflow-x:hidden;}
+/*a:link, a:visited { color: #333; text-decoration: none}
+a:hover, a:active { color: #ff7e00; text-decoration: none}*/
+a{text-decoration: none;color: #333;}
+.clearfix:after {clear: both;visibility: hidden;content: ".";display: block;height: 0;}
+.arrow {position: absolute;right: 5px;top: 0;width: 0;height: 0;}
+.arrow:after {display: block;position: absolute;right: 0;top: 0;width: 10px;height: 10px;border-top: 2px solid #c5c5c5;border-right: 2px solid #c5c5c5;content: '';-webkit-transform: rotate(45deg);transform: rotate(45deg);}
+
+/*主体公用模块样式*/
+.wrap{width: 100%;min-width: 320px}
+.loadimg{height:30px;text-align: center;background:#fff url(//qiniu-cdn6.jinxidao.com/uploads/active/images/loading.gif) no-repeat center}
+
+/*全站头部模块样式*/
+header{position:relative;height: 45px;line-height: 45px;background: #fff; box-shadow: 0 1px 3px 0 rgba(58, 60, 64, 0.05);}
+.top-l-box,.top-r-box{position:absolute;}
+.top-l-box{top:0px;left:10px;z-index: 10}
+.top-r-box{top:0px;right:5px}
+.destination::after {content: "";display: inline-block;width:10px;height:10px;background:url(//qiniu-cdn6.jinxidao.com/uploads/active/images/icon-down.png) no-repeat 0 3px;background-size:10px 5px;vertical-align: middle;margin-left: 5px}
+.m-title{font-size:18px;text-align: center;color:#574324}
+.m-title .logo,.active_logo{display: inline-block;margin-top:7px;width:60px;height:32px;background:url(//qiniu-cdn7.jinxidao.com/m/icons/n_logo.png) no-repeat;background-size: 60px 32px}
+.icon-home{width:50px;height:20px;background:url(//qiniu-cdn6.jinxidao.com/uploads/active/images/icon_home.png) no-repeat 13px 13px;background-size: 21px 20px}
+.top-r-box a{display: inline-block;float:left;height:44px;margin:0 5px}
+.icon-member{width:30px;background: url(//qiniu-cdn6.jinxidao.com/uploads/active/img/icon-member.png) no-repeat 0px 10px;background-size: 22px 22px; margin-top: 10px}
+.icon-search{width:30px;background: url(//qiniu-cdn6.jinxidao.com/uploads/active/images/icon-search.png) no-repeat 0px 10px;background-size: 22px 22px; margin-top: 10px}
+.btn-index{margin-top:15px;width:16px; height: 14px;background: url(//qiniu-cdn7.jinxidao.com/m/images/book/back_v5.png) no-repeat center; background-size: 16px; text-indent: -9999px}
+#btn_oBack{background: url(//qiniu-cdn7.jinxidao.com/m/images/book/back.png) no-repeat center;background-size: 11px;}
+/*首页头部重写样式-2015/4/29 by zsl*/
+.top-logo{float: left;width: 102px;height: 25px;background: url(//qiniu-cdn7.jinxidao.com/m/images/logo-index.png) no-repeat;background-size: contain;margin: 10px 0 10px 10px;}
+.top-logo a{ display: block; height: 100%;}
+.top-menu{float: right;margin-top: 12px;}
+.top-menu li{float: left;display: inline-block;height: 20px;line-height: 20px;border-right: #cccccc 1px solid;padding: 0 8px;}
+.top-menu li:last-child{ border-right: none;}
+.top-menu .icon-member{display: inline-block;width: 20px;height: 20px;background: url(//qiniu-cdn6.jinxidao.com/uploads/active/images/icon-member.png) no-repeat;background-size: contain;margin-top: 0;}
+.top-menu .icon-search{display: inline-block;width: 20px;height: 20px;background: url(//qiniu-cdn6.jinxidao.com/uploads/active/images/icon-search.png) no-repeat;background-size: contain;margin-top: 0;}
+.top-menu .icon-search-open{background: url(//qiniu-cdn7.jinxidao.com/m/images/close-orange.png) no-repeat;background-size: contain;}
+/*攻略 2015/5/22 by liugh*/
+.strategy-top-menu{}
+.strategy-top-menu .top-l-li{position: absolute; top: 0; left: 10px;}
+.strategy-top-menu .top-r-li{position: absolute; top: 0; right: 10px;}
+.strategy-top-menu .m-top-logo{background: url(//qiniu-cdn7.jinxidao.com/m/images/m3-logo.png) no-repeat; background-size: 55px 25px; width: 55px; height: 25px; text-indent: -999px; margin-top: 10px;}
+.strategy-top-menu .m-top-home{background: url(//qiniu-cdn7.jinxidao.com/m/images/m3-home.png) no-repeat; background-size: 21px 20px; width: 21px; height: 20px; text-indent: -999px; margin-top: 10px;}
+
+/*浮动 */
+.f-cl { zoom: 1; }
+.f-cl:after { content: ''; display: block; clear: both; }
+.f-fl { float: left; }
+.f-fr { float: right; }
+
+/*全站尾部模块样式*/
+footer{background:#fff;border-top: 10px solid #eef0f2;}
+footer ul{height: 40px;border: 1px #ebebeb solid;border-width: 1px 0;padding: 10px 0;display: -webkit-box;}
+footer ul li{height: 34px;line-height: 34px;text-align: center;border: 1px solid #ddd;width: 50%;-webkit-box-flex: 1;margin: 0 10px;border-radius: 5px;}
+footer ul li a{display: inline-block;width:100%;height:36px;line-height: 36px}
+/*footer ul li a{padding:2px 0 2px 24px}*/
+footer .app{line-height: 44px;border-bottom: 1px solid #ebebeb;text-align: center;}
+footer .app a{padding-left:30px;display:inline-block;font-size:16px;background: url(//qiniu-cdn7.jinxidao.com/m/icons/ico-down.png) left center no-repeat;background-size: 20px 23px;}
+/*.home{background: url(//qiniu-cdn6.jinxidao.com/uploads/active/images/icon-home.png) no-repeat 0 2px; background-size:18px 18px}
+.login{background: url(//qiniu-cdn6.jinxidao.com/uploads/active/images/icon-login.png) no-repeat 0 2px; background-size:18px 18px}
+.order{background: url(//qiniu-cdn6.jinxidao.com/uploads/active/images/icon-order.png) no-repeat 0 2px; background-size:18px 18px}*/
+.gotop{display:none;position:fixed;width:69px;height:69px;right:10px;bottom:90px; background: url(../../../img/goToTop.png) no-repeat; z-index: 999; background-size: contain;}
+.gotop span{display:none;height:40px;width:40px;background: url(//qiniu-cdn7.jinxidao.com/m/icons/arup.png) no-repeat center center; background-size:14px 17px}
+.corpright{margin-bottom: 60px;padding-top:10px;}
+.corpright p{height:30px;text-align: center;line-height: 30px;color:#999}
+.corpright p span{color:#333;}
+.corpright p a{color:#333}
+/*.corpright p span{margin-left: 15px}*/
+.corpright .flag a{margin-left:20px;padding-left:20px;background: url(//qiniu-cdn7.jinxidao.com/m/icons/ico-phone.png) left center no-repeat;background-size:12px 12px;}
+
+/*点击加载更多*/
+.btn-view{padding:6px}
+.btn-view a{display:block;line-height:28px;background: #fff;height:28px;text-align:center;font-size: 14px;color:#aaa;}
+.btn-view a:hover{color:#ff7e00}
+
+.txt-f7e0{color: #ff7e00}
+.txt-2424{color: #242424}
+
+/*全站弹窗样式*/
+.ui-tipbox{position:fixed;left:50%;top:50%;background:#fff;border:1px #dbdbdb solid;}
+.ui-tipbox-title{border-bottom: 1px #ededed solid}
+.tipbox-title{text-align: center;padding:10px 0}
+.ui-tipbox-cont{color:#242424;}
+.tipbox-txt{text-align: center;padding:20px 0}
+.ui-tipbox-btn{border-top: 1px #dbdbdb solid;overflow: hidden}
+.btn-cancel{display:block;background:#f1f1f1;border-right:1px #dbdbdb solid;width:134px;height:44px;line-height:44px;text-align: center;color:#848484;}
+.btn-confirm{display:block;background:#f1f1f1;width:135px;height:44px;line-height:44px;text-align: center;color:#ff7e00;}
+.btn-confirm2{display:block;background:#f1f1f1;width:100%;height:44px;line-height:44px;text-align: center;color:#ff7e00;}
+
+.tip-order{width:270px;margin-left:-135px;margin-top:-54px;z-index: 10}
+
+.tip-ticket{width:270px;height:159px;margin-left:-135px;margin-top:-79px;}
+.tick-input{border:1px #dbdbdb solid;height:30px;line-height: 30px}
+
+.tip-date{width:270px;height:272px;margin-left:-135px;margin-top:-136px}
+.tip-date .tipbox-txt{border-bottom: 1px #dbdbdb solid}
+.tip-date .tipbox-txt:last-child{border-bottom: none}
+
+
+.ui-tipbox2{position: fixed;z-index:10; left:50%;top:50%;padding:10px 20px;background:#7f7f7f;border-radius: 12px;_top: expression(eval(document.documentElement.scrollTop)+50);}
+.ui-tipbox2-title{margin:10px auto;height:25px;}
+.tipbox2-icon{ margin:0 auto;width:25px;height:25px;}
+.ui-tipbox2-title .yes{background:url(//qiniu-cdn6.jinxidao.com/uploads/active/images/icon-yes2.png) no-repeat;background-size:25px 25px}
+.ui-tipbox2-cont{color:#fff;}
+.tipbox2-txt{}
+
+.mask{position: absolute;z-index:1;left: 0;top: 0;width: 100%; height: 100%;background: #000;opacity:.3;}
+.app-down-box{border-bottom:1px #dbdbdb solid;}
+
+/*首页app下载*/
+.app_download img{width:100%;}
+#openApp{position: relative; top: 0; z-index: 999; width: 100%; overflow:hidden;}
+#openApp a{display:block; background: rgba(0,0,0,.7);}
+#openApp .close{   overflow: hidden;display: block;width: 13%;height: 100%;position: absolute;right: 0;/* background: url(//qiniu-cdn7.jinxidao.com/m/images/close-black.png) no-repeat; background-size: contain;*/}
+#openApp .close i{display: inline-block;width: 100%;height: 100%;line-height: 22px;text-indent: -9999px;color: #333;background: transparent;border-radius: 12px;font-style: normal;font-size: 18px;position: absolute;right: 10px;/* top: 30%; */left: initial;}
+
+/*404*/
+.ul-404{background: #e9e9e9}
+.ul-404 li{text-align: center;}
+.ul-404 li:nth-child(1){padding-top: 80px}
+.ul-404 li:nth-child(1) span{font-size: 24px;color: #7a7a7a;}
+.ul-404 li:nth-child(1) p a{display: block;padding:5px 20px;width:90px;background:#b7b7b7;margin:20px auto;color:#fff;}
+.ul-404 li:nth-child(2){width: 114px;height:155px;background:url(//qiniu-cdn6.jinxidao.com/uploads/active/images/404_03.png) no-repeat;background-size:114px 155px;margin:0 auto;}
+.ul-404 li:nth-child(3){margin:30px auto 0;padding-bottom:30px;}
+.ul-404 li:nth-child(3) p a{text-decoration: underline;color:#999;}
+.ul-404 li:nth-child(3) span{margin:0 auto;display: block;width: 10px;height: 10px;border-top: 2px solid #c5c5c5;border-right: 2px solid #c5c5c5;content: '';-webkit-transform: rotate(132deg);transform: rotate(132deg);}
+.ul-404 li:nth-child(3) span a{position: absolute;top:-3px;left:1px;display: inline-block;width: 10px;height:10px;}
+/*弹出框*/
+.confirmBox{width: 240px;min-height: 100px;overflow: hidden;position: fixed;z-index: 1000;box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);background: #fff;border: 1px solid #E3E0D9;color: #333;border-radius: 5px;}
+.modal-body{padding: 15px;}
+.buttons{text-align: center;-webkit-border-radius: 0 0 6px 6px;display: -webkit-box;}
+.cancelAlertBox{color: #333;display: block;line-height: 40px;border-top: 1px solid #ccc;border-right: 1px solid #ccc;-webkit-box-flex: 1;}
+.closeConfirmBox{display: block;line-height: 40px;background: #FA863B;-webkit-box-flex: 1;color: #fff;}
+.closeAlertBox{color:#FF7D2F;display:block;}

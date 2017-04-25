@@ -2,7 +2,7 @@
     <div class="lgy_loginbox">
         <div class="lgy_login" >
             <span>用户名 :</span>
-            <input type="text" placeholder="请输入用户名" @click="adddata"/>
+            <input type="text" placeholder="请输入用户名" @click="lgy_blur"/>
         </div>
         <div class="lgy_login">
             <span>密 &nbsp; 码 :</span>
@@ -101,7 +101,8 @@
                 obj.username = this.name || '';
                 obj.password = this.password || '';
                 // this.$store.dispatch('lgy_login',obj)
-                //  setTimeout(function(){
+                 // setTimeout(function(){
+                    console.log(this)
                     this.$set(this.$data,'data',mapGetters(["lgyLogin"]));
                 //     console.log(this.$data.data.lgyLogin)
                 // }.bind(this),100)
@@ -112,8 +113,8 @@
             },
             adddata:function(e){
                 console.log(e.target)
-                $(e.target).focus(function(){
-                });
+                // $(e.target).focus(function(){
+                // });
                  $(e.target).blur(function(){
                     console.log(e.target.value)
                     // $(this).removeClass("bor");
@@ -121,7 +122,18 @@
                 // console.log(this.$store.state.username)
                 var obj = {name:123,password:123};
                 this.$store.dispatch('lgy_register',obj);
+            },
+            lgy_blur:function(e){
+                 $(e.target).blur(function(){
+                    console.log(e.target.value)
+                    // $(this).removeClass("bor");
+                });
+
             }
+        },
+        created:function(){
+             console.log(111)
+             this.$store.dispatch('lgy_login')
         },
         computed:mapGetters(["lgyLogin"])
     }

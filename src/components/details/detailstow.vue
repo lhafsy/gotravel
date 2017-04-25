@@ -103,7 +103,7 @@
     <div class="lgy_bottom">
             <ul>
                 <li>
-                    <router-link to="/comment">
+                    <router-link to="/">
                         <a href="">
                             <div class="lgy_icobox">
                                 <div class="lgy_ico"></div>
