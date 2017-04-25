@@ -1,8 +1,8 @@
 <template>
     <div class="lgy_loginbox">
-        <div class="lgy_login">
+        <div class="lgy_login" >
             <span>用户名 :</span>
-            <input type="text" placeholder="请输入用户名" v-model="username"/>
+            <input type="text" placeholder="请输入用户名" @click="adddata"/>
         </div>
         <div class="lgy_login">
             <span>密 &nbsp; 码 :</span>
@@ -21,7 +21,7 @@
             <input type="checkbox" class="lgy_checkbox">
             <span class="lgy_checkmsg">同意遵守去旅游吧<a href="">用户协议</a>和<a href="">隐私政策</a></span>
         </div>
-        <input type="button" value="注册" class="lgy_loginbtn" @click="adddata">
+        <input type="button" value="注册" class="lgy_loginbtn" @click="getdata">
         <router-link to="/login">登录</router-link>
         <div class="lgy_bottom">
             <ul>
@@ -67,31 +67,29 @@
                 </li>
             </ul>
         </div>
+        <div>{{lgyLogin}}</div>
     </div>
 </template>
 
 <script>
     import store from '../../store/index.js'
     import './lgy_register.css'
+    import {mapGetters,mapState, mapActions} from 'vuex';
 
     export default {
         name: 'register',
         data:function(){
             return{
-                name:this.name,
-                password:this.password,
-                username:"1"
-            }
-        },
-        computed:{
-            // username(){
-            //     return store.state.username
-            // },
-            data(){
-                return store.state.data;
+                name:666,
+                password:666,
+                username:"1",
+                data:[]
             }
         },
         methods:{
+            lgyLogin: function(){
+                console.log(111);
+            },
             lgy_login:function(){
                 var obj = {};
                 obj.username = this.username || '';
@@ -100,14 +98,32 @@
             },
             getdata:function(){
                 var obj = {};
+                obj.username = this.name || '';
+                obj.password = this.password || '';
+                // this.$store.dispatch('lgy_login',obj)
+                //  setTimeout(function(){
+                    this.$set(this.$data,'data',mapGetters(["lgyLogin"]));
+                //     console.log(this.$data.data.lgyLogin)
+                // }.bind(this),100)
+                
                 this.$store.dispatch('lgy_login',obj)
+                console.log(this.$data.data.lgyLogin)
+
             },
-            adddata:function(){
+            adddata:function(e){
+                console.log(e.target)
+                $(e.target).focus(function(){
+                });
+                 $(e.target).blur(function(){
+                    console.log(e.target.value)
+                    // $(this).removeClass("bor");
+                });
+                // console.log(this.$store.state.username)
                 var obj = {name:123,password:123};
-                console.log(obj)
-                this.$store.dispatch('lgy_register',obj)
+                this.$store.dispatch('lgy_register',obj);
             }
-        }
+        },
+        computed:mapGetters(["lgyLogin"])
     }
 </script>
 

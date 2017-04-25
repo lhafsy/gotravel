@@ -9,6 +9,14 @@ export default {
         state.username = value.username;
         state.password = value.password;
     },
+    lgyLogin(state,value){
+    	state.lgy = value
+    	// console.log(state.lgy)
+    	// for
+    	// return state.data_index
+    	// console.log(LGY.)
+    	// console.log(state.data_index)
+    }
 	// login({commit},obj){ 
 	// 	$.ajax({
 	// 		url: 'http://localhost/VUE/demo0415/lc666/src/php/login.php',

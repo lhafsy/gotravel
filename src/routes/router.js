@@ -6,6 +6,7 @@ import Comment from '../components/lgy_comment/lgy_comment.vue'
 import User from '../components/lgy_user/lgy_user.vue'
 import Detailsone from '../components/details/details.vue'
 import Detailstow from '../components/details/detailstow.vue'
+import Lgy from '../components/lgy/lgy.vue'
 
 
 export default [{
@@ -32,5 +33,9 @@ export default [{
     name: 'detailstow',
     path: '/detailstow',
     component: Detailstow
+},{
+    name: 'lgy',
+    path: '/lgy',
+    component: Lgy
 }]
 

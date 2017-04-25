@@ -31,40 +31,28 @@ export default {
         // store.commit('login',obj);
     },
     lgy_login({commit},obj){
-        $.ajax({
-            url: {BASE_URL}.BASE_URL+'gotravel/gotravel/php/lgy_getdata.php',
-            type: 'get',
-            data: [],
-            success:function(response){
-                this.data= response
-                
-                console.log(response);
-                // if(response == 'login succeed'){
-                //     location.href='http://localhost:8080/'+'?id='+obj.username
-                // }
-                
-
-
-            }
-        })
+        $.get({BASE_URL}.BASE_URL+'gotravel/gotravel/php/lgy_getdata.php',function(res){
+                    // console.log(this);
+                    commit("lgyLogin",res)
+        }.bind(this))
     },
     lgy_register({commit},obj){
-        $.ajax({
-            url: {BASE_URL}.BASE_URL+'gotravel/gotravel/php/lgy_adddata.php',
-            type: 'post',
-            data: {name: obj.name,password:obj.password},
-            success:function(response){
-                // this.data= response
+        // $.ajax({
+        //     url: {BASE_URL}.BASE_URL+'gotravel/gotravel/php/lgy_adddata.php',
+        //     type: 'post',
+        //     data: {name: obj.name,password:obj.password},
+        //     success:function(response){
+        //         // this.data= response
                 
-                console.log(response);
-                // if(response == 'login succeed'){
-                //     location.href='http://localhost:8080/'+'?id='+obj.username
-                // }
+        //         console.log(response);
+        //         // if(response == 'login succeed'){
+        //         //     location.href='http://localhost:8080/'+'?id='+obj.username
+        //         // }
                 
 
 
-            }
-        })
+        //     }
+        // })
     },
     // login({commit},obj){ 
     //     $.ajax({

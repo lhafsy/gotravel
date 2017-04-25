@@ -5,334 +5,45 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	<title>评价</title>
 	<style>
-	*{
-		font-family: '微软雅黑';
-		margin: 0;
-		padding: 0;
-	}
-	a{
-		text-decoration: none;
-		color: #333;
-	}
-	input{
-		outline: none;
-	}
-	ul li{
-		list-style: none;
-	}
-	em{
-		font-style: normal;
-	}
-	.clear:after {
-	    display: block;
-	    height: 0;
-	    clear: both;
-	}
-	.clear{
-	    zoom: 1;
-	}
-	.lgy_comment{
-		width: 100%;
-	}
-	.lgy_commenttop{
-		padding: 1rem;
-		height: 7rem;
-	}
-	.lgy_commentleft{
-		width: 30%;
-		height: 7rem;
-		text-align: center;
-		float: left;
-	}
-	.lgy_commentleft p{
-		color: #ff9000;
-	    font-size: 40px;
-	    font-weight: bold;
-	}
-	.lgy_commentstar{
-		width: 80px;
-	    height: 16px;
-	    text-align: left;
-	    margin: 0 auto 10px;
-	    background: url(star2.png) left top repeat-x;
-	    background-size: 16px 16px;
-	}
-	.lgy_commentstar em{
-	    width: 0%;
-	    height: 16px;
-	    display: inline-block;
-	    background: url(star1.png) left bottom repeat-x;
-	    background-size: 16px 16px;
-	}
-	.lgy_commentright{
-		width: 70%;
-		float: right;
-	}
-	.lgy_commentright ul{
-		padding: 10px 5px 5px 5px;
-	}
-	.lgy_commentright ul li{
-		font-size: 12px;
-		float: left;
-	    text-align: center;
-	    padding: 5px 10px;
-	    margin-right: 10px;
-	    margin-bottom: 10px;
-	    background: #fff;
-	    color: #876c52;
-	    border: 1px solid #876c52;
-	    border-radius: 20px;
-	}
-	.lgy_commentmsg{
-		padding-bottom: 0.5rem;
-		border-bottom: 1px solid #ccc;
-	}
-	.lgy_commentmsg ul li{
-		padding-bottom: 0.5rem;
-		border-bottom: 1px solid #ccc;
-	}
-	.lgy_msgtop{
-		height: 3rem;
-		padding: 1rem;
-	}
-	.userinfoa{
-		float: left;
-		position: relative;
-	}
-	.userinfoa img{
-		width: 45px;
-	    height: 45px;
-	    border-radius: 50%;
-	}
-	.userinfoa span{
-		position: absolute;
-	    left: 0;
-	    bottom: 0;
-	    font-size: 12px;
-	    padding: 0px 2px;
-	    background: #ff9000;
-	    border-radius: 12px;
-	    font-weight: bold;
-	    color: #fff;
-	    margin-left: 8px;
-	}
-	.userinfob{
-		float: left;
-		margin-left: 1rem;
-	}
-	.userinfob span{
-		width: 3rem;
-		height: 3rem;
-		float: left;
-		line-height: 3rem;
-		display: inline-block;
-	}
-	.lgy_commentleft{
-		float: left;
-	}
-	.lgy_commentstar1{
-		width: 80px;
-	    height: 16px;
-	    float: left;
-	    text-align: left;
-	    margin: 1rem auto 10px;
-	    background: url(star2.png) left top repeat-x;
-	    background-size: 16px 16px;
-	}
-	.lgy_commentstar1 em{
-	    width: 0%;
-	    height: 16px;
-	    display: inline-block;
-	    background: url(star1.png) left bottom repeat-x;
-	    background-size: 16px 16px;
-	}
-	.lgy_score{
-		display: inline-block;
-	    padding-left: 5px;
-	    color: #ff9000;
-	}
-	.userinfoc{
-		width: 5rem;
-		height: 3rem;
-		float: right;
-	}
-	.userinfocbg{
-		width: 5rem;
-		height: 3rem;
-		background: url(youzhi.png) no-repeat;
-		background-size:65%;
-	}
-	.lgy_msgcenter{
-		padding: 0 0.8rem;
-	}
-	.lgy_msgcenter p{
-		width: 100%;
-		height: 6rem;
-		font-size: 0.8rem;
-		color: #8b7a69;
-		overflow: hidden;
-	}
-	.lgy_msgbottom{
-		padding: 0 0.8rem;
-	}
-	.lgy_msgbottom p{
-		width: 100%;
-		height: 1rem;
-		font-size: 0.8rem;
-		color: #bda895;
-		overflow: hidden;
-	}
-	</style>
+	.outer-container,.content {
+    width: 200px; height: 200px;
+}
+.outer-container {
+    position: relative;
+    overflow: hidden;
+}
+.inner-container {
+    position: absolute; left: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+ /* for Chrome */
+.inner-container::-webkit-scrollbar {
+    display: none;
+}
+li{
+	float: left;
+	width: 200px;
+}
+</style>
 </head>
 <body>
-	<div class="lgy_comment">
-		<div class="lgy_commenttop">
-			<div class="lgy_commentleft">
-				<p>4.0</p>
-				<div class="lgy_commentstar">
-					<em style="width:80%"></em>
-				</div>
-				<span>616人评价</span>
-			</div>
-			<div class="lgy_commentright">
-				<ul>
-					<li>全部</li>
-					<li>有图(388)</li>
-					<li>好评(598)</li>
-					<li>中评(10)</li>
-					<li>差评(8)</li>
-				</ul>
-			</div>
-		</div>
-		<div style="width:100%;height:0.6rem;background:#eee;"></div>
-		<div class="lgy_commentmsg">
-			<ul>
-				<li>
-					<div class="lgy_msgtop">
-						<div class="userinfoa">
-							<img src="user1.jpg" alt="">
-							<span class="level">Lv.4</span>
-						</div>
-						<div class="userinfob">
-							<span>李**</span>
-							<div class="lgy_commentstar1">
-								<em style="width:80%"></em>
-							</div>
-							<span class="lgy_score">5.0</span>
-						</div>
-						<div class="userinfoc">
-							<div class="userinfocbg"></div>
-						</div>
-					</div>
-					<div class="lgy_msgcenter">
-						<p>1、位置：
-        在佛山出发大约一个半小时车程！
-        沿着大广高速从化方向一直去，在温泉收费站出口就可以了！有明显的路牌标志，比较好找！
-2、环境：
-         园林绿化还可以，房间面积好大，很舒适！
-3、配套设施：
-         配套设施比较完善、齐全！有自助餐厅，中餐厅，西餐厅！有儿童游乐场等等...</p>
-					</div>
-					<div class="lgy_msgbottom">
-						<p>【限时优惠】豪华温泉房1晚（带泡池）+双人豪华自助晚餐1份+双人无限次温泉</p>
-						<p>2017-03-22 01:03:06 家庭亲子</p>
-					</div>
-				</li>
-								<li>
-					<div class="lgy_msgtop">
-						<div class="userinfoa">
-							<img src="user2.png" alt="">
-							<span class="level">Lv.4</span>
-						</div>
-						<div class="userinfob">
-							<span>李**</span>
-							<div class="lgy_commentstar1">
-								<em style="width:80%"></em>
-							</div>
-							<span class="lgy_score">5.0</span>
-						</div>
-						<div class="userinfoc">
-							<div class="userinfocbg"></div>
-						</div>
-					</div>
-					<div class="lgy_msgcenter">
-						<p>1、位置：
-        在佛山出发大约一个半小时车程！
-        沿着大广高速从化方向一直去，在温泉收费站出口就可以了！有明显的路牌标志，比较好找！
-2、环境：
-         园林绿化还可以，房间面积好大，很舒适！
-3、配套设施：
-         配套设施比较完善、齐全！有自助餐厅，中餐厅，西餐厅！有儿童游乐场等等...</p>
-					</div>
-					<div class="lgy_msgbottom">
-						<p>【限时优惠】豪华温泉房1晚（带泡池）+双人豪华自助晚餐1份+双人无限次温泉</p>
-						<p>2017-03-22 01:03:06 家庭亲子</p>
-					</div>
-				</li>
-								<li>
-					<div class="lgy_msgtop">
-						<div class="userinfoa">
-							<img src="user3.jpg" alt="">
-							<span class="level">Lv.4</span>
-						</div>
-						<div class="userinfob">
-							<span>李**</span>
-							<div class="lgy_commentstar1">
-								<em style="width:80%"></em>
-							</div>
-							<span class="lgy_score">5.0</span>
-						</div>
-						<div class="userinfoc">
-							<div class="userinfocbg"></div>
-						</div>
-					</div>
-					<div class="lgy_msgcenter">
-						<p>1、位置：
-        在佛山出发大约一个半小时车程！
-        沿着大广高速从化方向一直去，在温泉收费站出口就可以了！有明显的路牌标志，比较好找！
-2、环境：
-         园林绿化还可以，房间面积好大，很舒适！
-3、配套设施：
-         配套设施比较完善、齐全！有自助餐厅，中餐厅，西餐厅！有儿童游乐场等等...</p>
-					</div>
-					<div class="lgy_msgbottom">
-						<p>【限时优惠】豪华温泉房1晚（带泡池）+双人豪华自助晚餐1份+双人无限次温泉</p>
-						<p>2017-03-22 01:03:06 家庭亲子</p>
-					</div>
-				</li>
-								<li>
-					<div class="lgy_msgtop">
-						<div class="userinfoa">
-							<img src="user4.jpg" alt="">
-							<span class="level">Lv.4</span>
-						</div>
-						<div class="userinfob">
-							<span>李**</span>
-							<div class="lgy_commentstar1">
-								<em style="width:80%"></em>
-							</div>
-							<span class="lgy_score">5.0</span>
-						</div>
-						<div class="userinfoc">
-							<div class="userinfocbg"></div>
-						</div>
-					</div>
-					<div class="lgy_msgcenter">
-						<p>1、位置：
-        在佛山出发大约一个半小时车程！
-        沿着大广高速从化方向一直去，在温泉收费站出口就可以了！有明显的路牌标志，比较好找！
-2、环境：
-         园林绿化还可以，房间面积好大，很舒适！
-3、配套设施：
-         配套设施比较完善、齐全！有自助餐厅，中餐厅，西餐厅！有儿童游乐场等等...</p>
-					</div>
-					<div class="lgy_msgbottom">
-						<p>【限时优惠】豪华温泉房1晚（带泡池）+双人豪华自助晚餐1份+双人无限次温泉</p>
-						<p>2017-03-22 01:03:06 家庭亲子</p>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
+<div class="outer-container">
+     <div class="inner-container">
+        <div class="content">
+            <ul>
+            	<li>11</li>
+            	<li>11</li>
+            	<li>11</li>
+            	<li>11</li>
+            	<li>11</li>
+            	<li>11</li>
+            	<li>11</li>
+            	<li>11</li>
+            </ul>
+        </div>
+     </div>
+ </div>
 </body>
 </html>

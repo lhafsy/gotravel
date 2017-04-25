@@ -10,7 +10,8 @@ Vue.use(Vuex)
 const state = {
     database:'user',
     username:'',
-    data:[]
+    data:[],
+    lgy:[]
     
 }
 
