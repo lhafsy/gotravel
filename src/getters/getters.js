@@ -6,5 +6,13 @@ export default {
     	console.log(state.lgy)
 		return state.lgy
 
+    },
+    Details:(state)=>{
+      console.log(22)
+        return state.lha
+    }
+    ,collection:(state)=>{
+      console.log(22)
+        return state.fsy
     }
 }

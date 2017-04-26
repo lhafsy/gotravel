@@ -16,6 +16,10 @@ import discovery from '../components/Tl_discovery/Tl_discovery.vue'
 import youji from '../components/Tl_youji/Tl_youji.vue'
 import index from '../components/HQ_index/index.vue'
 
+import Order from '../components/Order/Order.vue'
+import Collection from '../components/Collection/Collection.vue'
+import LuckDraw from '../components/LuckDraw/LuckDraw.vue'
+
 export default [{
     name: 'index',
     path: '/',
@@ -38,7 +42,7 @@ export default [{
     component: User
 },{
     name: 'details',
-    path: '/details',
+    path: '/details/:id',
     component: Detailsone
 },{
     name: 'detailstow',
@@ -68,5 +72,17 @@ export default [{
 },{
     path: '/youji',
     component: youji
+},{
+  name:'Order',
+    path: '/Order',
+    component: Order
+},{
+  name:'Collection',
+    path: '/Collection/:id',
+    component: Collection
+},{
+  name:'LuckDraw',
+    path: '/LuckDraw',
+    component: LuckDraw
 }]
 
