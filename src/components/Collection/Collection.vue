@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <template>
   <div>
    <div id="CollectionTop">
@@ -52,8 +51,6 @@
     computed:mapGetters(["collection"])
   }
 </script>
-
-=======
 <template>
   <div>
    <div id="CollectionTop">
@@ -107,5 +104,3 @@
     computed:mapGetters(["collection"])
   }
 </script>
-
->>>>>>> f0548a73dc9e1d540c48b7ea5d7087900c597a4e

@@ -1,4 +1,73 @@
-<<<<<<< HEAD
+*{padding: 0;margin: 0;list-style: none}
+
+
+#CollectionTop{
+  width: 100%;
+  height:2.8125rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+#CollectionTop > img{
+  float: left;
+  width:1.0rem;
+  height:0.875rem;
+  margin-top: 0.9375rem;
+  margin-left: 0.9375rem
+}
+#CollectionTop p{
+  display: inline-block;
+  font-size: 18px;
+  color: #3a3c40;
+  margin-left: -0.9375rem;
+  line-height:2.8125rem;
+}
+
+.CollectionDiv{
+  width: 95%;
+  height:5.85rem;
+  margin:  2.5%;
+}
+.CollectionDiv > img{
+  display: inline-block;
+  width: 43%;
+  height:5.25rem;
+  float: left;
+}
+
+.CollectionDivRigth{
+  width: 55%;
+  margin-left: 2%;
+  float: left;
+}
+.CollectionDivRigthp1{
+  font-size: 13px;
+  color: #242424;
+}
+.CollectionDivRigthp2{
+  color: #ADADAD;
+  margin: 0.1875rem 0;
+  height: 2.6rem;
+  overflow: hidden;
+  font-size: 13px;
+}
+.CollectionDivRigthspan1{
+  color: #ea7400;
+  font-size: 16px;
+  margin-right: 0.625rem;
+}
+.CollectionDivRigthspan2{
+  font-size: 12px;
+  margin-right: 10px;
+  text-decoration: line-through;
+   color: #ADADAD;
+}
+.CollectionDivRigthspan3{
+  float: right;
+    font-size: 12px;
+    margin: 0.25rem 0.3125rem 0 0;
+    color: #bbb;
+}
+
 *{padding: 0;margin: 0;list-style: none}
 
 
@@ -70,80 +139,3 @@
 }
 
 
-
-
-=======
-*{padding: 0;margin: 0;list-style: none}
-
-
-#CollectionTop{
-  width: 100%;
-  height:2.8125rem;
-  text-align: center;
-  border-bottom: 1px solid #eee;
-}
-#CollectionTop > img{
-  float: left;
-  width:1.0rem;
-  height:0.875rem;
-  margin-top: 0.9375rem;
-  margin-left: 0.9375rem
-}
-#CollectionTop p{
-  display: inline-block;
-  font-size: 18px;
-  color: #3a3c40;
-  margin-left: -0.9375rem;
-  line-height:2.8125rem;
-}
-
-.CollectionDiv{
-  width: 95%;
-  height:5.85rem;
-  margin:  2.5%;
-}
-.CollectionDiv > img{
-  display: inline-block;
-  width: 43%;
-  height:5.25rem;
-  float: left;
-}
-
-.CollectionDivRigth{
-  width: 55%;
-  margin-left: 2%;
-  float: left;
-}
-.CollectionDivRigthp1{
-  font-size: 13px;
-  color: #242424;
-}
-.CollectionDivRigthp2{
-  color: #ADADAD;
-  margin: 0.1875rem 0;
-  height: 2.6rem;
-  overflow: hidden;
-  font-size: 13px;
-}
-.CollectionDivRigthspan1{
-  color: #ea7400;
-  font-size: 16px;
-  margin-right: 0.625rem;
-}
-.CollectionDivRigthspan2{
-  font-size: 12px;
-  margin-right: 10px;
-  text-decoration: line-through;
-   color: #ADADAD;
-}
-.CollectionDivRigthspan3{
-  float: right;
-    font-size: 12px;
-    margin: 0.25rem 0.3125rem 0 0;
-    color: #bbb;
-}
-
-
-
-
->>>>>>> f0548a73dc9e1d540c48b7ea5d7087900c597a4e

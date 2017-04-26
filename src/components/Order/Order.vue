@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <template>
   <div>
     <div id="OrderTop">
@@ -41,7 +40,6 @@
   }
 </script>
 
-=======
 <template>
   <div>
     <div id="OrderTop">
@@ -84,4 +82,3 @@
   }
 </script>
 
->>>>>>> f0548a73dc9e1d540c48b7ea5d7087900c597a4e
