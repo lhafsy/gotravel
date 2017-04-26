@@ -9,7 +9,7 @@ export default {
        
     },
     lgy_login({commit},obj){
-        $.get({BASE_URL}.BASE_URL+'gotravel/gotravel/php/lgy_getdata.php',function(res){
+        $.get({BASE_URL}.BASE_URL+'gotravel/php/lgy_getdata.php',function(res){
                     // console.log(this);
                     commit("lgyLogin",res)
         }.bind(this))

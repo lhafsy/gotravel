@@ -17,7 +17,8 @@
         </div>
         <div class="lgy_login">
             <span>验证码 :</span>
-            <input type="text" placeholder="请输入验证码" class="lgy_inputnum" ref="password">
+            <input type="text" placeholder="请输入验证码" class="lgy_inputnum" @click="lgy_blurchange" ref="password">
+            <div class="tipsa">验证码错误</div>
             <span  class="lgy_changenum" @click="lgy_changenum">6F9e</span >
         </div>
         <div class="lgy_login">
@@ -149,6 +150,20 @@
 
             },
             lgy_blurpswb:function(e){
+                $(e.target).blur(function(){
+                    var num1 = e.target.value;
+                    var num2 = e.target.offsetParent.previousElementSibling.children[1].value;
+                    if( num2 == "" ){
+                        e.target.nextElementSibling.style.display = "none";
+                    }else if (num1 != num2){
+                        e.target.nextElementSibling.style.display = "block";
+                    }else{
+                        e.target.nextElementSibling.style.display = "none";
+                    }
+                });
+
+            },
+            lgy_blurchange:function(e){
                 $(e.target).blur(function(){
                     var num1 = e.target.value;
                     var num2 = e.target.offsetParent.previousElementSibling.children[1].value;
