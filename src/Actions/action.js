@@ -14,7 +14,8 @@ export default {
                     commit("lgyLogin",res)
         }.bind(this))
     },
-    lgy_register({commit},obj){
+    lgyregisterbtn({commit},obj){
+        console.log(obj)
         // $.ajax({
         //     url: {BASE_URL}.BASE_URL+'gotravel/gotravel/php/lgy_adddata.php',
         //     type: 'post',

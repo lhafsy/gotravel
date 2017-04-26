@@ -14,15 +14,24 @@
 	height: 3rem;
 	line-height: 3rem;
 	padding: 0 1.5rem;
+	position: relative;
 }
 .lgy_login input{
 	text-indent: 0.5rem;
 	margin-left: 1.5rem;
-	width: 60%;
+	width: 67%;
 	height: 2rem;
 	border: 2px solid #ccc;
 	border-radius: 5px;
 	outline: none;
+}
+.tips{
+	color: red;
+	position: absolute;
+	top: 0;
+	right: 13.5%;
+	display: none;
+	font-size: 0.1rem;
 }
 .lgy_login span{
 	font-size: 1rem;
