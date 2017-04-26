@@ -16,13 +16,23 @@ export default {
     	// console.log(LGY.)
     	// console.log(state.data_index)
     },
+    Details(state,value){
+      console.log(111)
+      console.log(value)
+      state.lha = value
+      console.log(state.lha)
+    },
+    collection(state,value){
+      state.fsy = value
+    }
+    ,
     scrollTo: function(options) {
 
 			    var defaults = {
 			        top: 0, // 滚动目标位置
 			        durTime: 500, // 过渡动画时间
 			        delay: 30, // 定时器时间
-			        callback: null // 回调函数 
+			        callback: null // 回调函数
 			    };
 			    var opts = $.extend(defaults, options),
 			        timer = null,
@@ -52,7 +62,7 @@ export default {
 
 			    return _this;
 	}
-	
+
 
 
 }

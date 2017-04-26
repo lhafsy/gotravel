@@ -39,6 +39,10 @@
   height: 9.375rem;
   background-color: red;
   position: relative;
+    overflow: hidden;
+}
+#detailsImg img{
+  width: 100%;
 }
 #detailsImg p{
   position: absolute;
@@ -57,15 +61,19 @@
   margin-left: 5%;
   padding-top: 0.8125rem;
   padding-bottom: 0.75rem;
+  position: relative;
 }
 #detailsEvaluate > p{
   display: inline-block;
   width: 80%;
+  position: absolute;
+  top: 1.25rem
 }
 
 #detailsEvaluate >div{
   display: inline-block;
   width: 15%;
+  margin-left: 80%;
 }
 
 #detailsEvaluate > div >img{
@@ -82,7 +90,7 @@
   height:4.375rem;
   margin-left: 5%;
   padding: 15px 15px 15px 0;
-  background-color: #eee;
+  border-bottom: 0.3125rem solid #eee;
 }
 .detailsTicketP1{
   color: #574324;

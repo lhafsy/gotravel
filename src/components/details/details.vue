@@ -14,34 +14,35 @@
     </ul>
   </div>
 
-  <div id="detailsImg"><img src="" alt="">
-    <p>动态加载</p>
-  </div>
-
-  <div id="detailsEvaluate">
-    <p>动态加载</p>
-    <div>
-    <img src="img/a.png" id="detailsa" >
-      <img src="img/b.png" id="detailsb" style="display: none">
-      <p>收藏</p>
+ <div id="detailsImg"><img v-bind:src="'img/'+Details[0].gimg" alt="">
+      <p>{{Details[0].Praise}}</p>
     </div>
-  </div>
+
+    <div id="detailsEvaluate">
+      <p>{{Details[0].gtitle}}</p>
+      <div>
+        <img src="img/a.png" id="detailsa" @click="CollectionConversion">
+        <img src="img/b.png" id="detailsb" style="display: none" @click="CollectionConversionn">
+        <p>收藏</p>
+      </div>
+    </div>
 
   <div class="detailsTicket">
-    <p class="detailsTicketP1">限时票</p>
-    <p class="detailsTicketP2">￥10</p>
-    <p class="detailsTicketP3">预定</p>
-  </div>
-  <div class="detailsTicket">
-    <p class="detailsTicketP1">儿童票</p>
-    <p class="detailsTicketP2">动态加载</p>
-    <p class="detailsTicketP3">预定</p>
-  </div>
-  <div class="detailsTicket">
-    <p class="detailsTicketP1">成人票</p>
-    <p class="detailsTicketP2">动态加载</p>
-    <p class="detailsTicketP3">预定</p>
-  </div>
+      <p class="detailsTicketP1">限时票</p>
+      <p class="detailsTicketP2">￥10</p>
+      <p class="detailsTicketP3" @click="Reserve">预定</p>
+    </div>
+    <div class="detailsTicket">
+      <p class="detailsTicketP1">儿童票</p>
+      <p class="detailsTicketP2">{{Details[0].gpricey}}</p>
+      <p class="detailsTicketP3" @click="Reserve">预定</p>
+    </div>
+    <div class="detailsTicket">
+      <p class="detailsTicketP1">成人票</p>
+      <p class="detailsTicketP2">{{Details[0].gprice}}</p>
+      <p class="detailsTicketP3" @click="Reserve">预定</p>
+    </div>
+
 
 
 
@@ -155,14 +156,44 @@
 </template>
 
 
-
 <script>
-    import store from '../../store/index.js'
-     import './details.css'
+  import store from '../../store/index.js'
+  import $ from 'jquery'
+  import './details.css'
+  import {mapGetters,mapState, mapActions} from 'vuex'
 
-    export default {
-        name: 'details'
+  export default {
+    name: 'details',
+    data:function(){
+      return{
+        lha:[]
+      }
+    },
+    methods:{
+      CollectionConversion:function(){
+       $('#detailsa').css("display","none");
+       $('#detailsb').css("display","block");
+       var obj = {gid :this.$route.params.id};
+       this.$store.dispatch('increase',obj)
+     },
+     CollectionConversionn:function(){
+      $('#detailsa').css("display","block");
+      $('#detailsb').css("display","none");
+      var obj = {gid :this.$route.params.id};
+      this.$store.dispatch('delete',obj)
+    },
+    Reserve:function(){
+       // this.$store.dispatch('details',obj)
+     }
+   }
+   ,created: function () {
+      // console.log(this.$route.params.id)
+      var obj = {gid :this.$route.params.id};
+      this.$store.dispatch('details',obj)
+      // return state.detailslhalha
+    },
+    computed:mapGetters(["Details"])
 
-    }
+
+  }
 </script>
-
